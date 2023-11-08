@@ -12,7 +12,7 @@ document.write(`<h3>El arreglo de ciudades tiene ${arrayCiudad.length} elementos
 
 document.write(`<ul>`);
 //sustituyo en segunda posicion del elemento por Barcelona
-arrayCiudad.splice(1,1,"Barcelona");
+arrayCiudad[1] = "Barcelona";
 
 //aagrego en ultima posicion la ciudade PAris
 arrayCiudad.push("Paris");

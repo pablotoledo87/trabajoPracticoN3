@@ -1,7 +1,16 @@
-function ParOImpar(numero = 0){
-    return (numero % 2 !== 0)
-    document.write("el numero "+numero+ " es impar") ;
+function ParOImpar(numero){
+    while (isNaN(numero)){
+        numero = parseInt(prompt(`Ingrese un numero: `))
+    }
+    if(numero %2 ==0){
+        document.write(`El numero ${numero} es par`);
 
+    }else{
+        document.write(`El numero ${numero} es impar`);
+    }
 
 }
+
+ParOImpar();
+
 
